@@ -8,7 +8,7 @@ export default function Footer() {
           <a href="mailto:support@ticketapp.com" className="hover:underline">Contact</a>
         </div>
           <p className="text-sm">
-          © {new Date().getFullYear()} Event Monkey. All rights reserved.
+          © {new Date().getFullYear()} TicketApp. All rights reserved.
         </p>
       </div>
     </footer>

@@ -6,7 +6,6 @@ export default function Landing() {
   return (
     <div className="max-w-[1440px] mx-auto font-inter text-gray-900 overflow-hidden">
       <Navbar/>
-      {/* HERO SECTION */}
       <section className="relative bg-linear-to-r mt-15  from-[#E040FB] to-[#FFC2FF] min-h-[90vh] flex flex-col justify-center items-center text-center px-6">1
         <div className="absolute top-0 left-0 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-0 right-0 w-60 h-60 bg-white/10 rounded-full blur-2xl animate-pulse"></div>
@@ -15,7 +14,7 @@ export default function Landing() {
           Simplify Your <span className="text-pink-100">Event Tickets</span>
         </h1>
         <p className="mt-6 text-lg text-white/90 max-w-2xl">
-          Manage, track, and resolve tickets effortlessly — powered by <strong>Event Monkey</strong>.
+          Manage, track, and resolve tickets effortlessly powered by <strong>TicketApp</strong>.
         </p>
 
         <div className="mt-8 flex gap-4 flex-wrap justify-center">
@@ -48,24 +47,36 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* ABOUT SECTION */}
-      <section id="about" className="py-20 px-8 grid md:grid-cols-2 gap-10 items-center">
-        <div className="text-center md:text-left">
-          <h2 className="text-3xl font-bold mb-4 text-[#E040FB]">What is Event Monkey?</h2>
-          <p className="text-gray-700 leading-relaxed">
-            Event Monkey is your all-in-one platform for managing event tickets with ease. 
-            From creating new tickets to resolving issues, it keeps everything organized, smart, and fast — 
-            so you can focus on what matters most: your events.
-          </p>
-        </div>
-        <img
-          src="/illustrations/tickets.svg"
-          alt="Tickets illustration"
-          className="w-full max-w-sm mx-auto md:mx-0 drop-shadow-xl"
-        />
-      </section>
+<section
+  id="about"
+  className="relative py-28 bg-white flex flex-col items-center justify-center text-center px-8"
+>
+  <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-14 items-center">
+    <img
+      src="https://framerusercontent.com/images/f5N8nV6VGKRyj6jWBs2dAj8tjo.png?scale-down-to=1024&width=1380&height=1460"
+      alt="Tickets illustration"
+      className="w-full max-w-sm mx-auto md:mx-0 drop-shadow-2xl"
+    />
 
-      {/* FEATURES SECTION */}
+    <div className="text-center md:text-left">
+      <h2 className="text-4xl font-bold mb-6 text-[#E040FB]">
+        What is TicketApp?
+      </h2>
+      <p className="text-gray-700 leading-relaxed text-lg">
+        TicketApp is your all-in-one platform for managing event tickets with ease. 
+        From creating new tickets to resolving issues, it keeps everything organized, 
+        smart, and fast — so you can focus on what matters most: your events.
+      </p>
+      <Link
+        to="/auth/signup"
+        className="inline-block mt-8 bg-linear-to-r from-[#E040FB] to-[#FFC2FF] text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:opacity-90 transition"
+      >
+        Get Started
+      </Link>
+    </div>
+  </div>
+</section>
+
       <section id="features" className="py-20 px-8 bg-gray-50">
         <h2 className="text-3xl font-bold text-center text-[#E040FB] mb-12">
           Key Features
@@ -99,13 +110,6 @@ export default function Landing() {
           ))}
         </div>
       </section>
-
-      {/* FOOTER */}
-      {/* <footer className="bg-linear-to-r from-[#E040FB] to-[#FFC2FF] text-white py-8 text-center">
-        <p className="text-sm">
-          © {new Date().getFullYear()} Event Monkey. All rights reserved.
-        </p>
-      </footer> */}
       <Footer/>
     </div>
   );
