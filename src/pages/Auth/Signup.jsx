@@ -35,7 +35,6 @@ export default function Signup() {
     if (password.length < 6)
       return toast.error("Password must be at least 6 characters.");
 
-    // Save to localStorage
     const userData = { firstName, lastName, email, phone };
     localStorage.setItem("ticketapp_session", JSON.stringify(userData));
     login(userData);
@@ -45,7 +44,6 @@ export default function Signup() {
 
   return (
     <div className="grid md:grid-cols-2 min-h-screen bg-linear-to-r from-[#E040FB] to-[#FFC2FF]">
-      {/* IMAGE SIDE */}
       <div className="hidden md:flex items-center justify-center">
         <img
           src="https://framerusercontent.com/images/f5N8nV6VGKRyj6jWBs2dAj8tjo.png"
@@ -54,7 +52,6 @@ export default function Signup() {
         />
       </div>
 
-      {/* FORM SIDE */}
       <div className="bg-white rounded-l-3xl flex items-center justify-center p-10">
         <form
           onSubmit={handleSubmit}

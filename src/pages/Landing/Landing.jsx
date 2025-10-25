@@ -6,10 +6,7 @@ export default function Landing() {
   return (
     <div className="max-w-[1440px] mx-auto font-inter text-gray-900 overflow-hidden">
       <Navbar/>
-      <section className="relative bg-linear-to-r mt-15  from-[#E040FB] to-[#FFC2FF] min-h-[90vh] flex flex-col justify-center items-center text-center px-6">1
-        <div className="absolute top-0 left-0 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-0 right-0 w-60 h-60 bg-white/10 rounded-full blur-2xl animate-pulse"></div>
-
+      <section className="relative bg-linear-to-r mt-15 from-[#E040FB] to-[#FFC2FF] min-h-[90vh] flex flex-col justify-center items-center text-center px-6">
         <h1 className="text-5xl md:text-6xl font-extrabold text-white leading-tight">
           Simplify Your <span className="text-pink-100">Event Tickets</span>
         </h1>
